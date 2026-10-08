@@ -1,0 +1,9 @@
+#! /bin/bash
+
+#To use the Uninstallation script, run sudo sh pluninstall
+
+rm -rf /etc/psiphon
+rm -rf /usr/bin/psiphon
+rm -rf plinstaller2
+rm -rf ca.psiphon.PsiphonTunnel.tunnel-core
+rm -rf pluninstaller

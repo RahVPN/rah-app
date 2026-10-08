@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "437881592323",
+    "project_id": "rahvpn-d10e7",
+    "storage_bucket": "rahvpn-d10e7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:437881592323:android:785e4d7572889ac3684c36",
+        "android_client_info": {
+          "package_name": "com.example.rah_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBThRj8UcQDF8KQFya8oL7FdiGZ14HYnpE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

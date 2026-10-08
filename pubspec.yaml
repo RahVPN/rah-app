@@ -1,0 +1,52 @@
+name: rah_app
+description: Android client (Flutter) that drives the Aether core and exposes a VPN. Unofficial.
+publish_to: "none"
+version: 0.2.3+1
+
+environment:
+  sdk: ">=3.9.0 <4.0.0"
+  flutter: ">=3.35.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+  url_launcher: ^6.3.2
+  
+  shared_preferences: ^2.5.6
+  firebase_core: ^4.15.0
+  firebase_analytics: ^12.6.0
+  firebase_messaging: ^16.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.4
+
+
+flutter_launcher_icons:
+  android: true
+  image_path: "assets/icon/rahvpn.png"
+  adaptive_icon_background: "#121212"
+  adaptive_icon_foreground: "assets/icon/rahvpn.png"
+  # min_sdk_android: 21
+
+
+
+
+flutter:
+  generate: true
+  uses-material-design: true
+  assets:
+    - assets/icon/
+  fonts:
+    - family: Vazirmatn
+      fonts:
+        - asset: assets/fonts/Vazirmatn-Regular.ttf
+        - asset: assets/fonts/Vazirmatn-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Vazirmatn-Bold.ttf
+          weight: 700
