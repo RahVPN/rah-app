@@ -6,9 +6,9 @@ class AboutPage extends StatelessWidget {
   const AboutPage({super.key});
 
   static final _releasesUrl = Uri.parse(
-    'https://github.com/saeidjeddi/RahVPN/releases/latest',
+    'https://github.com/RahVPN/rah-app/releases/latest',
   );
-  static final _sourceUrl = Uri.parse('https://github.com/saeidjeddi/RahVPN');
+  static final _sourceUrl = Uri.parse('https://github.com/RahVPN/rah-app');
   static final _telegramUrl = Uri.parse('https://t.me/rahvp');
 
   Future<void> _open(Uri uri) async {
