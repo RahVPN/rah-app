@@ -18,7 +18,6 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    packaging { jniLibs { useLegacyPackaging = true } } // rah-patched
     packaging {
         jniLibs {
             useLegacyPackaging = true
@@ -71,6 +70,5 @@ flutter {
 }
 
 dependencies {
-    implementation(files("libs/hev-socks5-tunnel.aar"))
     implementation(files("libs/hev-socks5-tunnel.aar"))
 }

@@ -26,22 +26,20 @@ import 'firebase_options.dart';
 Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
-  debugPrint('🔥 Background message: ${message.messageId}');
-  debugPrint('📦 Data: ${message.data}');
-  debugPrint('🔔 Title: ${message.notification?.title}');
-  debugPrint('📝 Body: ${message.notification?.body}');
+  debugPrint('Background message: ${message.messageId}');
+  debugPrint('Data: ${message.data}');
+  debugPrint('Title: ${message.notification?.title}');
+  debugPrint('Body: ${message.notification?.body}');
 }
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  // Firebase is configured for Android only (firebase_options.dart); no Linux support in the plugins.
+  
   if (Platform.isAndroid) {
     await Firebase.initializeApp(
       options: DefaultFirebaseOptions.currentPlatform,
     );
 
-    // Register before other asynchronous startup work so the native messaging
-    // plugin can dispatch messages while the app is backgrounded.
     FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
 
     final messaging = FirebaseMessaging.instance;
@@ -52,17 +50,17 @@ void main() async {
     );
     debugPrint('Notification permission: ${settings.authorizationStatus}');
 
-    final fcmToken = await messaging.getToken();
+    // final fcmToken = await messaging.getToken();
     FirebaseMessaging.onMessage.listen((message) {
-      debugPrint('🔥 Foreground message: ${message.messageId}');
-      debugPrint('📦 Data: ${message.data}');
-      debugPrint('🔔 Title: ${message.notification?.title}');
-      debugPrint('📝 Body: ${message.notification?.body}');
+      debugPrint('Foreground message: ${message.messageId}');
+      debugPrint('Data: ${message.data}');
+      debugPrint('Title: ${message.notification?.title}');
+      debugPrint('Body: ${message.notification?.body}');
     });
 
     await FirebaseMessaging.instance.subscribeToTopic('all');
 
-    debugPrint('FCM Token: $fcmToken');
+    // debugPrint('FCM Token: $fcmToken');
   }
 
   final AetherDataSource aetherDataSource = Platform.isLinux
