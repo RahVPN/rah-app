@@ -62,3 +62,21 @@ flutter run -d linux        # حالت توسعه
 ./tools/linux/package_linux.sh deb  # پکیج دبیان/اوبونتو در dist/
 ./tools/linux/package_linux.sh rpm  # پکیج فدورا/RHEL در dist/
 ```
+
+
+## 📥 Download APK
+
+| Architecture  | Download                                                                                                        |
+| ------------- | --------------------------------------------------------------------------------------------------------------- |
+| 📱 ARM64-v8a  | [**Download APK**](https://github.com/RahVPN/rah-app/releases/download/v0.2.3/app-arm64-v8a-release.apk)   |
+| 📱 ARMv7      | [**Download APK**](https://github.com/RahVPN/rah-app/releases/download/v0.2.3/app-armeabi-v7a-release.apk) |
+| 📱 x86_64    | [**Download APK**](https://github.com/RahVPN/rah-app/releases/download/v0.2.3/app-x86_64-release.apk)      |
+| 📱 Universal | [**Download APK**](https://github.com/RahVPN/rah-app/releases/download/v0.2.3/app-release.apk)             |
+
+## 📥 Download Linux
+
+| Architecture     | Download                                                                                                       |
+| ---------------- | -------------------------------------------------------------------------------------------------------------- |
+| 📱 Debian/Ubuntu | [**Download APK**](https://github.com/RahVPN/rah-app/releases/download/v0.2.3/rahvpn_0.2.3_amd64.deb)     |
+| 📱 Fedora/RHEL   | [**Download APK**](https://github.com/RahVPN/rah-app/releases/download/v0.2.3/rahvpn-0.2.3.x86_64.rpm)    |
+| 📱 tar.gz       | [**Download APK**](https://github.com/RahVPN/rah-app/releases/download/v0.2.3/rahvpn-linux-x86_64.tar.gz) |
