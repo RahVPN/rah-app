@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:rah_app/core/constants/app_info.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:rah_app/l10n/generated/app_localizations.dart';
 import 'package:rah_app/core/theme/app_theme.dart';
@@ -65,7 +67,7 @@ class _RahAppState extends State<RahApp> {
     final darkTheme = buildAppTheme();
     RahColors.lightMode = _lightTheme;
     return MaterialApp(
-      title: 'RahVPN',
+      title: AppInfo.name,
       debugShowCheckedModeBanner: false,
       theme: lightTheme,
       darkTheme: darkTheme,
@@ -78,6 +80,10 @@ class _RahAppState extends State<RahApp> {
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
+      builder: (context, child) => AnnotatedRegion<SystemUiOverlayStyle>(
+        value: buildSystemUiOverlayStyle(light: _lightTheme),
+        child: child ?? const SizedBox.shrink(),
+      ),
       home: SplashPage(
         homePage: widget.homePage,
         onLocaleChanged: _setLocale,

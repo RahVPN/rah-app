@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:rah_app/core/constants/app_info.dart';
+import 'package:rah_app/core/theme/app_spacing.dart';
 import 'package:rah_app/l10n/generated/app_localizations.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -22,19 +24,19 @@ class AboutPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text(l.about)),
       body: ListView(
-        padding: const EdgeInsets.all(24),
+        padding: const EdgeInsets.all(AppSpacing.xl),
         children: [
-          const SizedBox(height: 24),
+          const SizedBox(height: AppSpacing.xl),
           Center(
             child: ClipRRect(
               borderRadius: BorderRadius.circular(16),
               child: Image.asset('assets/icon/rahvpn.png', width: 120, height: 120),
             ),
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: AppSpacing.lg),
           Center(
             child: Text(
-              'Rah VPN',
+              AppInfo.name,
               style: theme.textTheme.headlineSmall?.copyWith(
                 fontWeight: FontWeight.w700,
               ),
@@ -47,14 +49,14 @@ class AboutPage extends StatelessWidget {
                 ListTile(
                   leading: const Icon(Icons.info_outline_rounded),
                   title: Text(l.version),
-                  subtitle: const Text('0.2.3'),
+                  subtitle: const Text(AppInfo.version),
                 ),
               ],
             ),
           ),
-          const SizedBox(height: 24),
+          const SizedBox(height: AppSpacing.xl),
           Text(l.contact, style: theme.textTheme.titleMedium),
-          const SizedBox(height: 8),
+          const SizedBox(height: AppSpacing.sm),
           Card(
             child: Column(
               children: [
@@ -67,7 +69,7 @@ class AboutPage extends StatelessWidget {
               ],
             ),
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: AppSpacing.lg),
           FilledButton.icon(
             onPressed: () => _open(_releasesUrl),
             icon: const Icon(Icons.download_rounded),

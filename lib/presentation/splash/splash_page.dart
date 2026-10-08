@@ -1,7 +1,9 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:rah_app/core/constants/app_info.dart';
 import 'package:rah_app/core/theme/rah_colors.dart';
+import 'package:rah_app/core/theme/app_spacing.dart';
 import 'package:rah_app/l10n/generated/app_localizations.dart';
 import 'package:rah_app/presentation/home/home_page.dart';
 
@@ -59,29 +61,29 @@ class _SplashPageState extends State<SplashPage> {
                 height: 120,
               ),
             ),
-            const SizedBox(height: 24),
+            const SizedBox(height: AppSpacing.xl),
             Text(
-              'Rah VPN',
+              AppInfo.name,
               style: theme.textTheme.headlineMedium?.copyWith(
                 color: RahColors.foam,
                 fontWeight: FontWeight.w700,
               ),
             ),
-            const SizedBox(height: 8),
+            const SizedBox(height: AppSpacing.sm),
             Text(
               l.appSlogan,
               style: theme.textTheme.bodyMedium?.copyWith(
                 color: RahColors.mist,
               ),
             ),
-            const SizedBox(height: 12),
+            const SizedBox(height: AppSpacing.md),
             TextButton(
               onPressed: () => widget.onLocaleChanged(
                 Locale(widget.locale.languageCode == 'fa' ? 'en' : 'fa'),
               ),
               child: Text(l.languageName),
             ),
-            const SizedBox(height: 32),
+            const SizedBox(height: AppSpacing.xxl),
             SizedBox(
               width: 100,
               height: 2,
