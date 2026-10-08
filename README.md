@@ -80,8 +80,8 @@ flutter run -d linux        # development
 
 ## 📥 Download Linux
 
-| Architecture  | Download                                                                                                       |
+| Distribution  | Download                                                                                                       |
 | ------------- | -------------------------------------------------------------------------------------------------------------- |
 | Debian/Ubuntu | [**Download APK**](https://github.com/RahVPN/rah-app/releases/download/v0.2.3/rahvpn_0.2.3_amd64.deb)     |
 | Fedora/RHEL   | [**Download APK**](https://github.com/RahVPN/rah-app/releases/download/v0.2.3/rahvpn-0.2.3.x86_64.rpm)    |
-|  tar.gz      | [**Download APK**](https://github.com/RahVPN/rah-app/releases/download/v0.2.3/rahvpn-linux-x86_64.tar.gz) |
+| tar.gz        | [**Download APK**](https://github.com/RahVPN/rah-app/releases/download/v0.2.3/rahvpn-linux-x86_64.tar.gz) |
