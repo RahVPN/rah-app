@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:rah_app/app/rah_app.dart' show appLightTheme, appLocale;
 import 'package:rah_app/l10n/generated/app_localizations.dart';
 import 'package:flutter/services.dart';
+import 'package:rah_app/core/constants/app_info.dart';
 import 'package:rah_app/core/theme/app_text_styles.dart';
 import 'package:rah_app/core/theme/rah_colors.dart';
 import 'package:rah_app/domain/entities/aether_config.dart';
@@ -566,9 +567,12 @@ class _HomePageState extends State<HomePage> {
     final noize = _config.protocol == 'masque'
         ? HomeConstants.masqueNoize
         : HomeConstants.wireGuardNoize;
-    final ipLabel = _config.ip == 'dual'
-        ? _l.dualIpVersion
-        : HomeConstants.ipVersions[_config.ip] ?? _config.ip;
+    final ipLabel = switch (_config.ip) {
+      '4' => 'IPv4',
+      '6' => 'IPv6',
+      'dual' => _l.dualIpVersion,
+      _ => _config.ip,
+    };
 
     final overview = <Widget>[
       Center(
@@ -760,7 +764,7 @@ class _HomePageState extends State<HomePage> {
           textDirection: TextDirection.ltr,
           children: [
             Text(
-              'Rah VPN',
+              AppInfo.name,
               style: theme.textTheme.titleLarge!.copyWith(
                 fontWeight: FontWeight.w700,
               ),

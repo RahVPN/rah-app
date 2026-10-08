@@ -1,6 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import 'rah_colors.dart';
+
+SystemUiOverlayStyle buildSystemUiOverlayStyle({required bool light}) {
+  return SystemUiOverlayStyle(
+    statusBarColor: Colors.transparent,
+    statusBarIconBrightness: light ? Brightness.dark : Brightness.light,
+    statusBarBrightness: light ? Brightness.light : Brightness.dark,
+    systemNavigationBarColor: RahColors.ink,
+    systemNavigationBarIconBrightness:
+        light ? Brightness.dark : Brightness.light,
+    systemNavigationBarDividerColor: RahColors.line,
+  );
+}
 
 ThemeData buildAppTheme({bool light = false}) {
   RahColors.lightMode = light;
@@ -38,14 +51,15 @@ ThemeData buildAppTheme({bool light = false}) {
     useMaterial3: true,
     brightness: light ? Brightness.light : Brightness.dark,
     colorScheme: scheme,
-    scaffoldBackgroundColor: RahColors.ink,
+    scaffoldBackgroundColor: scheme.surface,
     fontFamily: 'Vazirmatn',
     splashFactory: InkSparkle.splashFactory,
-    appBarTheme: const AppBarTheme(
+    appBarTheme: AppBarTheme(
       backgroundColor: Colors.transparent,
       surfaceTintColor: Colors.transparent,
       scrolledUnderElevation: 0,
       elevation: 0,
+      systemOverlayStyle: buildSystemUiOverlayStyle(light: light),
     ),
     chipTheme: ChipThemeData(
       backgroundColor: RahColors.panelHigh,
