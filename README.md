@@ -26,15 +26,14 @@ flutter build apk --debug
 
 RahVPN release APKs are signed with a 4096-bit RSA certificate.
 
-| Property             | Value                                                                                               |
-| -------------------- | --------------------------------------------------------------------------------------------------- |
-| Alias                | `rahvpn`                                                                                          |
-| Key algorithm        | RSA 4096-bit                                                                                        |
-| Signature algorithm  | SHA384withRSA                                                                                       |
-| APK signature scheme | v2                                                                                                  |
-| Certificate SHA-256  | `DF:9B:1D:C7:36:40:0E:69:28:2C:2A:D1:DA:75:71:58:9B:53:50:B4:A7:E2:2C:69:0B:58:63:89:30:40:66:46` |
-| Certificate SHA-1    | `39:43:83:EA:68:5D:91:42:37:67:3D:5A:06:BA:4C:24:46:EE:B1:1B`                                     |
-| Certificate validity | `2026-10-08 → 2054-02-23`                                                                        |
+| Property             | Value                                                             |
+| -------------------- | ----------------------------------------------------------------- |
+| Alias                | `rahvpn`                                                        |
+| Key algorithm        | RSA 4096-bit                                                      |
+| Signature algorithm  | SHA384withRSA                                                     |
+| APK signature scheme | v2                                                                |
+| Certificate SHA-256  | df9b1dc736400e69282c2ad1da7571589b5350b4a7e22c690b58638930406646  |
+| Certificate SHA-1    | 394383ea685d914237673d5a06ba4c2446eeb11b                          |
 
 ### Verify an APK
 
@@ -65,23 +64,19 @@ flutter run -d linux        # development
 ./tools/linux/package_linux.sh rpm  # Fedora/RHEL package in dist/
 ```
 
-
-
 ## 📥 Download APK
 
 | Architecture | Download                                                                                                        |
 | ------------ | --------------------------------------------------------------------------------------------------------------- |
-|  ARM64-v8a  | [**Download APK**](https://github.com/RahVPN/rah-app/releases/download/v0.2.3/app-arm64-v8a-release.apk)   |
-| ARMv7        | [**Download APK**](https://github.com/RahVPN/rah-app/releases/download/v0.2.3/app-armeabi-v7a-release.apk) |
-| x86_64       | [**Download APK**](https://github.com/RahVPN/rah-app/releases/download/v0.2.3/app-x86_64-release.apk)      |
-| Universal    | [**Download APK**](https://github.com/RahVPN/rah-app/releases/download/v0.2.3/app-release.apk)             |
-
-
+| ARM64-v8a    | [**Download APK**](https://github.com/RahVPN/rah-app/releases/download/v0.2.4/app-arm64-v8a-release.apk)   |
+| ARMv7        | [**Download APK**](https://github.com/RahVPN/rah-app/releases/download/v0.2.4/app-armeabi-v7a-release.apk) |
+| x86_64       | [**Download APK**](https://github.com/RahVPN/rah-app/releases/download/v0.2.4/app-x86_64-release.apk)      |
+| Universal    | [**Download APK**](https://github.com/RahVPN/rah-app/releases/download/v0.2.4/app-release.apk)             |
 
 ## 📥 Download Linux
 
-| Distribution  | Download                                                                                                       |
-| ------------- | -------------------------------------------------------------------------------------------------------------- |
-| Debian/Ubuntu | [**Download**](https://github.com/RahVPN/rah-app/releases/download/v0.2.3/rahvpn_0.2.3_amd64.deb)     |
-| Fedora/RHEL   | [**Download**](https://github.com/RahVPN/rah-app/releases/download/v0.2.3/rahvpn-0.2.3.x86_64.rpm)    |
-| tar.gz        | [**Download**](https://github.com/RahVPN/rah-app/releases/download/v0.2.3/rahvpn-linux-x86_64.tar.gz) |
+| Distribution  | Download                                                                                                   |
+| ------------- | ---------------------------------------------------------------------------------------------------------- |
+| Debian/Ubuntu | [**Download**](https://github.com/RahVPN/rah-app/releases/download/v0.2.4/rahvpn_0.2.4_amd64.deb)     |
+| Fedora/RHEL   | [**Download**](https://github.com/RahVPN/rah-app/releases/download/v0.2.4/rahvpn-0.2.4.x86_64.rpm)    |
+| tar.gz        | [**Download**](https://github.com/RahVPN/rah-app/releases/download/v0.2.4/rahvpn-linux-x86_64.tar.gz) |
