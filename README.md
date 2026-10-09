@@ -71,10 +71,10 @@ flutter run -d linux        # development
 
 | Architecture | Download                                                                                                        |
 | ------------ | --------------------------------------------------------------------------------------------------------------- |
-|  ARM64-v8a  | [**Download APK**](https://github.com/RahVPN/rah-app/releases/download/v0.2.3/app-arm64-v8a-release.apk)   |
-| ARMv7        | [**Download APK**](https://github.com/RahVPN/rah-app/releases/download/v0.2.3/app-armeabi-v7a-release.apk) |
-| x86_64       | [**Download APK**](https://github.com/RahVPN/rah-app/releases/download/v0.2.3/app-x86_64-release.apk)      |
-| Universal    | [**Download APK**](https://github.com/RahVPN/rah-app/releases/download/v0.2.3/app-release.apk)             |
+|  ARM64-v8a  | [**Download APK**](https://github.com/RahVPN/rah-app/releases/download/v0.2.4/app-arm64-v8a-release.apk)   |
+| ARMv7        | [**Download APK**](https://github.com/RahVPN/rah-app/releases/download/v0.2.4/app-armeabi-v7a-release.apk) |
+| x86_64       | [**Download APK**](https://github.com/RahVPN/rah-app/releases/download/v0.2.4/app-x86_64-release.apk)      |
+| Universal    | [**Download APK**](https://github.com/RahVPN/rah-app/releases/download/v0.2.4/app-release.apk)             |
 
 
 
@@ -82,6 +82,6 @@ flutter run -d linux        # development
 
 | Distribution  | Download                                                                                                       |
 | ------------- | -------------------------------------------------------------------------------------------------------------- |
-| Debian/Ubuntu | [**Download**](https://github.com/RahVPN/rah-app/releases/download/v0.2.3/rahvpn_0.2.3_amd64.deb)     |
-| Fedora/RHEL   | [**Download**](https://github.com/RahVPN/rah-app/releases/download/v0.2.3/rahvpn-0.2.3.x86_64.rpm)    |
-| tar.gz        | [**Download**](https://github.com/RahVPN/rah-app/releases/download/v0.2.3/rahvpn-linux-x86_64.tar.gz) |
+| Debian/Ubuntu | [**Download**](https://github.com/RahVPN/rah-app/releases/download/v0.2.4/rahvpn_0.2.4_amd64.deb)     |
+| Fedora/RHEL   | [**Download**](https://github.com/RahVPN/rah-app/releases/download/v0.2.4/rahvpn-0.2.4.x86_64.rpm)    |
+| tar.gz        | [**Download**](https://github.com/RahVPN/rah-app/releases/download/v0.2.4/rahvpn-linux-x86_64.tar.gz) |
