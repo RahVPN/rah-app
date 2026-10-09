@@ -26,15 +26,15 @@ flutter build apk --debug
 
 APKهای نسخهٔ انتشار RahVPN با گواهی RSA ۴۰۹۶ بیتی امضا می‌شوند.
 
-| Property             | Value                                                                                               |
-| -------------------- | --------------------------------------------------------------------------------------------------- |
-| Alias                | `rahvpn`                                                                                          |
-| Key algorithm        | RSA 4096-bit                                                                                        |
-| Signature algorithm  | SHA384withRSA                                                                                       |
-| APK signature scheme | v2                                                                                                  |
-| Certificate SHA-256  | `DF:9B:1D:C7:36:40:0E:69:28:2C:2A:D1:DA:75:71:58:9B:53:50:B4:A7:E2:2C:69:0B:58:63:89:30:40:66:46` |
-| Certificate SHA-1    | `39:43:83:EA:68:5D:91:42:37:67:3D:5A:06:BA:4C:24:46:EE:B1:1B`                                     |
-| Certificate validity | `2026-10-08 → 2054-02-23`                                                                        |
+| Property             | Value                                                            |
+| -------------------- | ---------------------------------------------------------------- |
+| Alias                | `rahvpn`                                                       |
+| Key algorithm        | RSA 4096-bit                                                     |
+| Signature algorithm  | SHA384withRSA                                                    |
+| APK signature scheme | v2                                                               |
+| Certificate SHA-256  | df9b1dc736400e69282c2ad1da7571589b5350b4a7e22c690b58638930406646 |
+| Certificate SHA-1    | 394383ea685d914237673d5a06ba4c2446eeb11b                         |
+
 
 از ابزار apksigner اندروید (موجود در Android SDK Build Tools) برای تأیید امضا و نمایش جزئیات گواهی استفاده کن:
 
@@ -63,7 +63,6 @@ flutter run -d linux        # حالت توسعه
 ./tools/linux/package_linux.sh rpm  # پکیج فدورا/RHEL در dist/
 ```
 
-
 ## 📥 Download APK
 
 | Architecture | Download                                                                                                        |
@@ -75,8 +74,8 @@ flutter run -d linux        # حالت توسعه
 
 ## 📥 Download Linux
 
-| Distribution  | Download                                                                                                       |
-| ------------- | -------------------------------------------------------------------------------------------------------------- |
+| Distribution  | Download                                                                                                   |
+| ------------- | ---------------------------------------------------------------------------------------------------------- |
 | Debian/Ubuntu | [**Download**](https://github.com/RahVPN/rah-app/releases/download/v0.2.4/rahvpn_0.2.4_amd64.deb)     |
 | Fedora/RHEL   | [**Download**](https://github.com/RahVPN/rah-app/releases/download/v0.2.4/rahvpn-0.2.4.x86_64.rpm)    |
 | tar.gz        | [**Download**](https://github.com/RahVPN/rah-app/releases/download/v0.2.4/rahvpn-linux-x86_64.tar.gz) |
